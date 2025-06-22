@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Jugos Tropicales</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #fffde7, #ffe082);
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      background: #ff9800;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .jugos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+      gap: 30px;
+    }
+
+    .jugo {
+      background: white;
+      border: 2px solid #ffc107;
+      border-radius: 15px;
+      padding: 20px;
+      width: 280px;
+      transition: transform 0.3s;
+      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+      animation: entrada 1s ease-in-out;
+    }
+
+    .jugo:hover {
+      transform: scale(1.05);
+    }
+
+    .jugo img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .jugo h2 {
+      color: #ff5722;
+    }
+
+    footer {
+      background: #ffcc80;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .jugo {
+        width: 90%;
+      }
+
+      header h1 {
+        font-size: 2em;
+      }
+    }
+
+    button {
+      margin-top: 10px;
+      background-color: #ff9800;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #f57c00;
+    }
+
+    @keyframes entrada {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🍹 Jugos Tropicales</h1>
+    <p>¡Disfruta las mejores combinaciones de frutas naturales!</p>
+  </header>
+
+  <section class="jugos">
+    <div class="jugo">
+      <h2>Mangopiña</h2>
+      <img src="https://th.bing.com/th/id/R.353a2919b7cd803aae62e7dc54c6ac21?rik=Fww7NkSnXJJacA&riu=http%3a%2f%2fsingrasa.net%2fwp-content%2fuploads%2f2013%2f02%2fmango-pi%c3%b1a-smoothie.jpg&ehk=5T8%2f1Au7252do5ceOMwQ4V9zDF1ZR3HQ%2f2%2buqY0cPAY%3d&risl=&pid=ImgRaw&r=0" alt="Mangopiña">
+      <p>Refrescante mezcla de mango y piña. Rica en vitamina C, ideal para el calor tropical.</p>
+      <button>¡Pídelo ahora!</button>
+    </div>
+
+    <div class="jugo">
+      <h2>Platberry</h2>
+      <img src="https://cocineroperu.com/wp-content/uploads/2014/09/jugo-fresa-1-768x480.jpg" alt="Platberry">
+      <p>Un jugo delicioso con fresa y plátano. Perfecto para energizar tus mañanas.</p>
+      <button>¡Pídelo ahora!</button>
+    </div>
+
+    <div class="jugo">
+      <h2>Morandano</h2>
+      <img src="https://lahoranoticias.com/wp-content/uploads/2024/01/Receta-de-Jugo-de-Moro-en-Agua-696x390.jpg" alt="morandano">
+     <p>sabor nuevo y unico, no te vas a arrepentir.</p>
+      <button>¡Pídelo ahora!</button>
+    </div>
